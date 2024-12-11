@@ -1,0 +1,20 @@
+[network]
+name = "mainnet"
+url = "https://zook-mainnet.network"
+
+[contracts]
+zbtcz = "STE795203C5EFD8ED58C3C"
+governance = "STC7F5CE165974FCB07C63"
+bridge = "STDD90D9E36137A73EED56"
+
+[settings]
+retry-attempts = 10
+retry-delay = 5000 # milliseconds
+log-level = "info"
+
+[api]
+host = "0.0.0.0"
+port = 443
+
+[validator]
+minimum-stake = 1000000
