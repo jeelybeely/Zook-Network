@@ -1,0 +1,21 @@
+[project]
+name = "zook-network"
+version = "0.1.0"
+description = "Clarity contracts for the Zook Network"
+
+[contracts]
+bridge = "clarity_contracts/bridge/transaction_bridge.clar"
+zbtcz = "clarity_contracts/tokens/zbtcz_smart_contract.clar"
+governance = "clarity_contracts/governance/proposal_voting.clar"
+
+[dev]
+network = "testnet"
+
+[networks]
+[networks.testnet]
+host = "http://localhost:20443"
+name = "Devnet"
+
+[settings]
+gas-limit = 5000000
+max-iterations = 100
