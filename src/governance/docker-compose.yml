@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  zook-testnet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "20443:20443" # Zook RPC port
+      - "20444:20444" # Zook peer port
+    volumes:
+      - ./zook:/zook
+    command: cargo run --release --bin zook
